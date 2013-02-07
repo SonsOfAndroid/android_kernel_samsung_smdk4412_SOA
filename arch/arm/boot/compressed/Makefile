@@ -22,7 +22,7 @@ ifeq ($(CONFIG_CRYPTO_FIPS),y)
 AFLAGS_head.o += -DFIPS_KERNEL_RAM_BASE=0x40008000
 endif
 HEAD	= head.o
-OBJS	+= misc.o decompress.o
+
 FONTC	= $(srctree)/drivers/video/console/font_acorn_8x8.c
 
 #
